@@ -3,7 +3,7 @@ import re
 import collections
 
 # Define the path to the leetcode directory
-readme_path = 'cyborgisthefuture/README.md')
+readme_path = 'cyborgisthefuture/README.md'
 
 # Regex patterns to extract metadata
 metadata_pattern = re.compile(r'# (.*?): (.*)')
