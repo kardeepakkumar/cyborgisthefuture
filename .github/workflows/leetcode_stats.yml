@@ -1,9 +1,12 @@
 name: LeetCode Stats
 
 on:
-  push:
-    paths:
-      - 'cyborgisthefuture/leetcode/**.py'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual trigger'
+        required: true
+        default: 'Updating leetcode stats'
 
 jobs:
   analyze-and-update-stats:
