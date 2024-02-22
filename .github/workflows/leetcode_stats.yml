@@ -30,5 +30,5 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: "Update LeetCode statistics"
-        file_pattern: cyborgisthefuture/leetcode/README.md
+        file_pattern: cyborgisthefuture/README.md
 
