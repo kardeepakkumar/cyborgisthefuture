@@ -1,0 +1,15 @@
+class Solution:
+    def findJudge(self, n: int, trust: List[List[int]]) -> int:
+        trust_counts = dict.fromkeys(range(1, n+1), 0)
+        not_judge = set()
+        for t in trust:
+            not_judge.add(t[0])
+            trust_counts[t[1]] += 1
+        for key in trust_counts:
+            if(trust_counts[key] == n-1 and key not in not_judge):
+                return key
+        return -1
+
+# Key Concepts: for loop, set, dictionary, fromkeys
+# Time Complexity: O(T+N): 93.11%
+# Space Complexity: O(N): 86.28%
