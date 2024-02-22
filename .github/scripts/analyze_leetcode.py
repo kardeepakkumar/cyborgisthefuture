@@ -3,6 +3,7 @@ import re
 import collections
 
 # Define the path to the leetcode directory
+leetcode_dir = 'cyborgisthefuture/leetcode'
 readme_path = 'cyborgisthefuture/README.md'
 
 # Regex patterns to extract metadata
