@@ -1,0 +1,34 @@
+name: LeetCode Stats
+
+on:
+  push:
+    paths:
+      - 'cyborgisthefuture/leetcode/**.py'
+
+jobs:
+  analyze-and-update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install PyYAML # Assuming YAML is used for parsing
+
+    - name: Analyze LeetCode Solutions
+      run: python .github/scripts/analyze_leetcode.py
+
+    - name: Commit and Push Changes (if any)
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: "Update LeetCode statistics"
+        file_pattern: cyborgisthefuture/leetcode/README.md
+

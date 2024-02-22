@@ -7,6 +7,9 @@ class Solution:
                 return([num_map[complement], i])
             else:
                 num_map[num] = i
-# Key Concepts: hash table/dictionary, enumerate, for loop
-# Time Complexity: O(N): 87.78%
-# Space Complexity: O(N): 75.94%
+
+# relevant-topics hash table/dictionary, enumerate, for loop
+# time-complexity O(N) 87.78%
+# space-complexity O(N) 75.94%
+# language: python
+# difficulty: easy

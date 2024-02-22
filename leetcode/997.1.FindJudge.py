@@ -9,7 +9,9 @@ class Solution:
             if(trust_counts[key] == n-1 and key not in not_judge):
                 return key
         return -1
-
-# Key Concepts: for loop, set, dictionary, fromkeys
-# Time Complexity: O(T+N): 93.11%
-# Space Complexity: O(N): 86.28%
+    
+# relevant-topics for loop, set, dict.fromkeys
+# time-complexity O(T+N) 93.11%
+# space-complexity O(N) 86.28%
+# language: python
+# difficulty: easy

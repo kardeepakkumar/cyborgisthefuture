@@ -6,7 +6,8 @@ class Solution:
                 if(nums[i] + nums[j] == target):
                     return([i,j])
 
-# Key Concepts: array, for loop 
-# Time Complexity: O(N^2): 17.72%
-# Space Complexity: O(1): 80.82%
-                
+# relevant-topics array, for loop 
+# time-complexity O(N^2) 17.72%
+# space-complexity O(1) 80.82%
+# language: python
+# difficulty: easy

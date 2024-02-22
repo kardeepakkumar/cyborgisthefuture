@@ -9,6 +9,8 @@ class Solution:
                 return i
         return -1
 
-# Key Concepts: for loop
-# Time Complexity: O(T+N): 88.42%
-# Space Complexity: O(N): 66.79%
+# relevant-topics for loop
+# time-complexity O(T+N) 88.42%
+# space-complexity O(N) 66.79%
+# language: python
+# difficulty: easy
