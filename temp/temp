@@ -2,3 +2,7 @@ on:
   push:
     paths:
       - 'cyborgisthefuture/leetcode/**.py'
+
+Next steps:
+fix the analyze leetcode script
+set python, markdown linting
