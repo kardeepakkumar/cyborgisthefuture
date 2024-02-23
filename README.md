@@ -10,7 +10,7 @@ Welcome to my Tech Notes Repository! This space is dedicated to sharing my journ
 ## How to Navigate
 
 - **LeetCode Solutions:** Found in the `/leetcode` directory, solutions are tagged with difficulty (easy, medium, hard) and relevant topics (sets, dictionaries, recursion, etc.) for easy navigation.
-- **iOS Mobile App Development:** Navigate to the `/iOSmoviledev` directory to find detailed notes and projects categorized by topics such as Swift, XCode, and UI Design.
+- **iOS Mobile App Development:** Navigate to the `/courses/CourseraMeta-iOSmobiledev` directory to find detailed notes and projects categorized by topics such as Swift, XCode, and UI Design.
 
 ## Contribution
 
