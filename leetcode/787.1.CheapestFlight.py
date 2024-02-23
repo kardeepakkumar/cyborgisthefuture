@@ -10,8 +10,8 @@ class Solution:
         return tmp_prices[dst] if tmp_prices[dst] != float('inf') else -1
 
 # relevant-topics bellman-ford, array, graph theory, shortest path
-# time-complexity O(N^3)
-# space-complexity O(N)
-# language
+# time-complexity O(N^3) 39.33%
+# space-complexity O(N) 98.60%
+# language python
 # difficulty medium
 # date 20240223

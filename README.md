@@ -5,10 +5,12 @@ Welcome to my Tech Notes Repository! This space is dedicated to sharing my journ
 ## Current Contents
 
 - **LeetCode Solutions:** A comprehensive collection of my solutions to various coding challenges on LeetCode. Each solution is accompanied by Time-Space Complexity analysis.
+- **iOS Mobile App Development:** Notes and projects from my journey learning iOS app development, covering Swift, XCode, UI design, and more.
 
 ## How to Navigate
 
 - **LeetCode Solutions:** Found in the `/leetcode` directory, solutions are tagged with difficulty (easy, medium, hard) and relevant topics (sets, dictionaries, recursion, etc.) for easy navigation.
+- **iOS Mobile App Development:** Navigate to the `/iOSmoviledev` directory to find detailed notes and projects categorized by topics such as Swift, XCode, and UI Design.
 
 ## Contribution
 
@@ -16,13 +18,9 @@ I'm always looking to improve and expand this repository. If you have suggestion
 
 ## Future Plans
 
-While the repository currently focuses on LeetCode solutions, I plan to include:
-
 - Notes on various tech topics, such as AI, software development, system design, and more.
-- Tutorials and project walkthroughs.
-- Reviews and summaries of tech books and courses.
-
-Stay tuned for updates and new content!
+- **More in-depth tutorials and project walkthroughs, especially focusing on iOS app development and advanced Swift programming techniques.**
+- Reviews and summaries of tech books and courses, including insights from my iOS development learning journey.
 
 ## License
 
@@ -33,4 +31,3 @@ This project is open source and available under the [MIT License](LICENSE).
 Follow me on GitHub to stay updated or reach out to me on [LinkedIn](https://www.linkedin.com/in/kardeepakkumar).
 
 Thank you for visiting my Tech Notes Repository. Happy coding!
-
