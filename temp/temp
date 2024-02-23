@@ -7,3 +7,13 @@ Next steps:
 fix the analyze leetcode script
 set python, markdown linting
 leetcode solution gpt
+
+
+git filter-repo --commit-callback '
+  if commit.author_email == b"kardeepak.kumar@sprinklr.com":
+    commit.author_name = b"kardeepakkumar"
+    commit.author_email = b"deepakkumaar97@gmail.com"
+  if commit.committer_email == b"kardeepak.kumar@sprinklr.com":
+    commit.committer_name = b"kardeepakkumar"
+    commit.committer_email = b"deepakkumaar97@gmail.com"
+'
