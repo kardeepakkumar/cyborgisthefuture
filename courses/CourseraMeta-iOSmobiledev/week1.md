@@ -38,3 +38,23 @@
 ### Learning Methodologies
 - Engage with video content, readings, and quizzes to reinforce learning.
 - Participate in exercises designed to apply theoretical knowledge in practical scenarios.
+ 
+## 1.3 Course Syllabus
+
+### Module 1
+- Introduction to iOS mobile app development
+- Basics of xcode IDE setup
+- Unpack structure of an iOS app
+
+### Module 2
+- Simulation and Development
+- Simulator and OS images
+- iOS code and project structure
+- App Delegate file, View Controller and Resource folders
+- Xcode's build system and info.plist folder to specify app config
+
+### Module 3
+- Build your very own app project
+- Intro to project planning
+- Create a video player
+- Gradded assessment
