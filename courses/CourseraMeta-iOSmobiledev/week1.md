@@ -58,3 +58,61 @@
 - Intro to project planning
 - Create a video player
 - Gradded assessment
+
+## 1.4 The Mobile Developer Role
+
+### Overview
+- The demand for mobile apps is increasing and expected to grow exponentially.
+
+### Responsibilities
+- Design, build, and maintain:
+  - User Interfaces (UI)
+  - Functional code
+  - Animations
+  - API integration
+- Conduct testing, release apps to store, and update them regularly.
+- Use version control to track changes and collaborate with teams.
+- Plan projects and participate in meetings.
+- Stay updated with trends and technological updates.
+
+### Skills and Technologies
+- **Languages**: Swift and Objective-C for iOS development.
+- **Design and User Experience**: Focus on aesthetics and usability.
+- **Server Technology**: Backend integration.
+- **Continuous Integration**: Streamline code integration and testing.
+- **Employment Opportunities**: Available in both small and large companies, freelancing, or startups.
+
+## 1.5 A Day in the Life of an iOS Developer
+
+### Routine
+- Engage in the innovation process through meetings with managers and UX teams.
+- Write code and coach junior engineers and interns.
+- Enjoy user feedback on the apps developed.
+
+### Challenges
+- Debugging and monitoring app performance.
+
+### Daily Skills
+- **Technical**: Problem-solving, coding, and design.
+- **Soft Skills**: Collaboration, planning (setting priorities and timelines), and mentoring.
+
+### Advice
+- Enhance skills by replicating features from existing apps and designs.
+
+## 1.6 Setting Up Xcode
+
+### Development Environment
+- **Xcode**: The primary development environment for iOS.
+- **Installation**: Download and install Xcode from the official Apple website or App Store.
+
+### Starting with Xcode
+- **Welcome Page**: Options to create a new project, clone a project, or open an existing project.
+- **Creating a New Project**:
+  - Choose a template.
+  - Set the product name, add team members for collaboration, and define the organization and bundle identifier.
+  - Select the interface (SwiftUI or Storyboard) and programming language (Swift or Objective-C).
+  - Choose the folder path for the project and create a Git repository.
+
+### Navigating Xcode
+- **Project Pane**: Located on the left, displays the file structure.
+- **Top Bar**: Contains the play button to run the app in a simulator.
