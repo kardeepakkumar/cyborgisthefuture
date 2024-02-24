@@ -80,7 +80,7 @@
 - **Design and User Experience**: Focus on aesthetics and usability.
 - **Server Technology**: Backend integration.
 - **Continuous Integration**: Streamline code integration and testing.
-- **Employment Opportunities**: Available in both small and large companies, freelancing, or startups.
+- **Employment Opportunities**: Available in both small and large companies, freelancing, or self-startups.
 
 ## 1.5 A Day in the Life of an iOS Developer
 
