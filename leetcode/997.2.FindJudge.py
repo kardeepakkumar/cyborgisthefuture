@@ -12,5 +12,6 @@ class Solution:
 # relevant-topics for loop
 # time-complexity O(T+N) 88.42%
 # space-complexity O(N) 66.79%
-# language: python
-# difficulty: easy
+# language python
+# difficulty easy
+# date 20240222

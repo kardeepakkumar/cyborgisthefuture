@@ -9,5 +9,6 @@ class Solution:
 # relevant-topics array, for loop 
 # time-complexity O(N^2) 17.72%
 # space-complexity O(1) 80.82%
-# language: python
-# difficulty: easy
+# language python
+# difficulty easy
+# date 20240222
