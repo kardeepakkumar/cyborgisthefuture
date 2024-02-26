@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         x: {
                             type: 'time',
                             time: {
-                                parser: 'YYYYMMDD',
                                 unit: 'day',
-                                tooltipFormat: 'MMM D, YYYY',
+                                tooltipFormat: 'MMM d, yyyy',
+                                parser: 'yyyyMMdd',
                                 displayFormats: {
-                                    day: 'MMM D'
+                                    day: 'MMM d'
                                 }
                             },
                             title: {
@@ -49,7 +49,7 @@ function prepareChartData(dateCount) {
     const hard = { label: 'Hard', data: [], backgroundColor: 'rgb(255, 99, 132)' };
 
     for (const [date, counts] of Object.entries(dateCount)) {
-        const formattedDate = moment(date, "YYYYMMDD").toDate();
+        const formattedDate = date; // No need for conversion, Chart.js and the adapter handle it
         labels.push(formattedDate);
         easy.data.push(counts.easy);
         medium.data.push(counts.medium);
