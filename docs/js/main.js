@@ -54,16 +54,11 @@ function prepareChartData(dateCount) {
     const hard = { label: 'Hard', data: [], backgroundColor: 'rgb(255, 99, 132)' };
 
     for (const [date, counts] of Object.entries(dateCount)) {
-        // Assuming the adapter can handle ISO 8601 format directly
-        const year = date.substring(0,4);
-        const month = date.substring(4,6);
-        const day = date.substring(6,8);
-        const formattedDate = `${year}-${month}-${day}`; // Convert to ISO 8601 format
-        
+        const formattedDate = date; // No need for conversion, Chart.js and the adapter handle it
         labels.push(formattedDate);
-        easy.data.push(counts.easy || 0); // Ensure 0 if undefined
-        medium.data.push(counts.medium || 0); // Ensure 0 if undefined
-        hard.data.push(counts.hard || 0); // Ensure 0 if undefined
+        easy.data.push(counts.easy);
+        medium.data.push(counts.medium);
+        hard.data.push(counts.hard);
     }
 
     return {
