@@ -1,6 +1,12 @@
 name: LeetCode Stats
 
 on:
+  push:
+    paths:
+      - './leetcode/**'
+  pull_request:
+    paths:
+      - './leetcode/**'
   workflow_dispatch:
     inputs:
       reason:
@@ -27,11 +33,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install PyYAML # Assuming YAML is used for parsing
-        pip install numpy
       
     - name: Ensure README.md is writable
-      run: chmod +rw ./README.md
+      run: chmod +rw ./leetcode/README.md
 
     - name: Analyze LeetCode Solutions
       run: python .github/scripts/analyze_leetcode.py

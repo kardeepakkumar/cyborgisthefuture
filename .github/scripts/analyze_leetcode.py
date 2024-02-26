@@ -1,20 +1,16 @@
 import os
 import re
 from collections import defaultdict
-import numpy as np
 from datetime import datetime
 
 
 leetcode_dir = '/home/runner/work/cyborgisthefuture/cyborgisthefuture/leetcode'
 readme_path = '/home/runner/work/cyborgisthefuture/cyborgisthefuture/leetcode/README.md'
 
-local = True
+local = False
 if local:
-    leetcode_dir = '/Users/kardeepak.kumar/MySprinklr/code/cyborgisthefuture/leetcode'
-    readme_path = '/Users/kardeepak.kumar/MySprinklr/code/cyborgisthefuture/leetcode/README.md'
-
-def parse_percentage(value):
-    return float(value.strip('%')) / 100
+    leetcode_dir = '../leetcode'
+    readme_path = '../leetcode/README.md'
 
 def update_readme_statistics(readme_path, stats_summary):
     with open(readme_path, 'r+') as readme:
@@ -57,47 +53,26 @@ for m in metadata:
     stats['unique_problems'].add(m['problem_id'])
     stats['date_count'][m['date']][m['difficulty']] += 1
 
-# Initialize the string variable
 datewise = ""
-
-# Headers
 headers = ["Date", "Easy", "Medium", "Hard", "Total", "Cumulative"]
 datewise += "|".join(f"{header:^10}" for header in headers) + "\n"
-
-# Initialize cumulative counters
 cumulative_easy, cumulative_medium, cumulative_hard = 0, 0, 0
-
-# Totals
 total_easy, total_medium, total_hard = 0, 0, 0
-
 for date in sorted(stats['date_count'].keys()):
     easy = stats['date_count'][date]['easy']
     medium = stats['date_count'][date]['medium']
     hard = stats['date_count'][date]['hard']
     total = easy + medium + hard
-
-    # Update cumulative totals
     cumulative_easy += easy
     cumulative_medium += medium
     cumulative_hard += hard
     cumulative_total = cumulative_easy + cumulative_medium + cumulative_hard
-
-    # Update totals
     total_easy += easy
     total_medium += medium
     total_hard += hard
-
-    # Format date
     formatted_date = datetime.strptime(date, "%Y%m%d").strftime("%d %b %Y")
-
-    # Append to datewise string
     datewise += f"{formatted_date:^10} | {easy:^4} | {medium:^6} | {hard:^4} | {total:^5} | {cumulative_total:^10}\n"
-
-# Append totals to datewise string
 datewise += f"{'Total':^10} | {total_easy:^4} | {total_medium:^6} | {total_hard:^4} | {total_easy + total_medium + total_hard:^5} | \n"
-
-# Print the final string
-print(datewise)
 
 stats_summary = f"""## LeetCode Statistics Summary
 
