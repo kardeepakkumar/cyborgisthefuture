@@ -39,4 +39,4 @@ jobs:
     - name: Commit and Push Changes (if any)
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: Update LeetCode statistics
+        commit_message: "auto-commit-update-leetcode-stats"

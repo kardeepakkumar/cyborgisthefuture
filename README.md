@@ -32,7 +32,6 @@ Follow me on GitHub to stay updated or reach out to me on [LinkedIn](https://www
 
 Thank you for visiting my Tech Notes Repository. Happy coding!
 
-test
 ## LeetCode Statistics Summary
 
 - Unique Problems Solved: 8
