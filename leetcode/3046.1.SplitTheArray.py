@@ -7,7 +7,7 @@ class Solution:
         else:
             return True
         
-        
+# metadata
 # relevant-topics counter, Counter().most_common
 # time-complexity O(N) 100.00%
 # space-complexity O(N) 100.00%

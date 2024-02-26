@@ -11,6 +11,7 @@ class Solution:
                 side = max(side, min(x2-x1, y2-y1))
         return side*side
 
+# metadata
 # relevant-topics geometry, 2d array
 # time-complexity O(N^2) 50.00%
 # space-complexity O(1) 100.00%

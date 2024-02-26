@@ -10,6 +10,7 @@ class Solution:
                 return key
         return -1
     
+# metadata
 # relevant-topics for loop, set, dict.fromkeys
 # time-complexity O(T+N) 93.11%
 # space-complexity O(N) 86.28%

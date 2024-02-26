@@ -9,6 +9,7 @@ class Solution:
             prices = tmp_prices
         return tmp_prices[dst] if tmp_prices[dst] != float('inf') else -1
 
+# metadata
 # relevant-topics bellman-ford, array, graph theory, shortest path
 # time-complexity O(N^3) 39.33%
 # space-complexity O(N) 98.60%

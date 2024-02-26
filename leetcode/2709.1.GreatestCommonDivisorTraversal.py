@@ -43,6 +43,7 @@ class Solution:
                     f_idx[n] = i
         return uf.count == 1
     
+# metadata
 # relevant-topics union find, prime numbers
 # time-complexity O(N*SQRT(MAX(NUMS))) 31.25%
 # space-complexity O(N) 93.75%

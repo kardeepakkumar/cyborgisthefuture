@@ -12,7 +12,8 @@ class Solution:
             return (p.val == q.val and self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right))
         else:
             return False
-        
+
+# metadata
 # relevant-topics binary tree, recursion
 # time-complexity O(N) 70.24%
 # space-complexity O(logN -> N) 76.00%
