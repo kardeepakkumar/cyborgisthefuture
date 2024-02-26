@@ -10,15 +10,22 @@ def update_readme_statistics(readme_path, stats_summary):
     with open(readme_path, 'r+') as readme:
         content = readme.read()
         stats_marker = "## LeetCode Statistics Summary"
+        end_marker = "##"  # Assuming there's another section starting with ## after the stats
+
+        # Check if the stats section already exists
         if stats_marker in content:
-            new_content = re.sub(f"{stats_marker}.*?##", f"{stats_summary}\n##", content, flags=re.DOTALL)
+            # Correctly replace the content between stats_marker and the next section marker
+            pattern = f"({stats_marker}).*?({end_marker})", re.DOTALL
+            new_content = re.sub(pattern, f"\\1\n{stats_summary}\n\\2", content, 1)
         else:
-            new_content = content + stats_summary
-        print("New Content:", new_content)
-        print("README: ", readme.read())
+            # Correctly append the stats summary with the marker if not found
+            new_content = content + f"\n{stats_marker}\n{stats_summary}\n"
+
+        print(new_content)
+        # Move the file pointer to the start for writing
         readme.seek(0)
         readme.write(new_content)
-        print("README: ", readme.read())
+        # Truncate the file in case the new content is shorter than the old content
         readme.truncate()
 
 leetcode_dir = '/home/runner/work/cyborgisthefuture/cyborgisthefuture/leetcode'
