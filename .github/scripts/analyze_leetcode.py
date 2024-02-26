@@ -2,15 +2,18 @@ import os
 import re
 from collections import defaultdict
 from datetime import datetime
-
+import json
 
 leetcode_dir = '/home/runner/work/cyborgisthefuture/cyborgisthefuture/leetcode'
 readme_path = '/home/runner/work/cyborgisthefuture/cyborgisthefuture/leetcode/README.md'
+data_json_path = '/home/runner/work/cyborgisthefuture/cyborgisthefuture/docs/data.json'
 
-local = False
+
+local = True
 if local:
-    leetcode_dir = '../leetcode'
-    readme_path = '../leetcode/README.md'
+    leetcode_dir = '../../leetcode'
+    readme_path = '../../leetcode/README.md'
+    data_json_path = '../../docs/data.json'
 
 def update_readme_statistics(readme_path, stats_summary):
     with open(readme_path, 'r+') as readme:
@@ -83,3 +86,13 @@ stats_summary = f"""## LeetCode Statistics Summary
 """
 
 update_readme_statistics(readme_path, stats_summary)
+
+def defaultdict_to_dict(d):
+    if isinstance(d, defaultdict):
+        d = {k: defaultdict_to_dict(v) for k, v in d.items()}
+    return d
+
+date_count_dict = defaultdict_to_dict(stats['date_count'])
+
+with open(data_json_path, 'w') as json_file:
+    json.dump({"date_count": date_count_dict}, json_file, indent=4)
