@@ -9,7 +9,7 @@ readme_path = '/home/runner/work/cyborgisthefuture/cyborgisthefuture/leetcode/RE
 data_json_path = '/home/runner/work/cyborgisthefuture/cyborgisthefuture/docs/data.json'
 
 
-local = True
+local = False
 if local:
     leetcode_dir = '../../leetcode'
     readme_path = '../../leetcode/README.md'
