@@ -14,8 +14,11 @@ def update_readme_statistics(readme_path, stats_summary):
             new_content = re.sub(f"{stats_marker}.*?##", f"{stats_summary}\n##", content, flags=re.DOTALL)
         else:
             new_content = content + stats_summary
+        print("New Content:", new_content)
+        print("README: ", readme.read())
         readme.seek(0)
         readme.write(new_content)
+        print("README: ", readme.read())
         readme.truncate()
 
 leetcode_dir = '/home/runner/work/cyborgisthefuture/cyborgisthefuture/leetcode'
