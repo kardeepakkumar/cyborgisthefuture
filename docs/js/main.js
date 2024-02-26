@@ -2,8 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
+            console.log("Raw data:", data); // Step 1: Log the raw data
+
             const ctx = document.getElementById('leetcodeChart').getContext('2d');
             const chartData = prepareChartData(data.date_count);
+            
+            console.log("Prepared chart data:", chartData); // Step 2: Log the prepared data
+
             new Chart(ctx, {
                 type: 'bar',
                 data: chartData,
