@@ -28,6 +28,6 @@ class Solution:
 # relevant-topics dfs, defaultdict, adjacency graph
 # time-complexity O(MlogM) 82.78%
 # space-complexity O(M) 11.92%
-# language: python
-# difficulty: hard
+# language python
+# difficulty hard
 # date 20240224
