@@ -25,7 +25,7 @@ def update_readme_statistics(readme_path, stats_summary):
         print("content: ", content)
         # Move the file pointer to the start for writing
         readme.seek(0)
-        readme.write(new_content)
+        readme.write("Test")
         # Truncate the file in case the new content is shorter than the old content
         with open(readme_path, 'r+') as readme2:
             content2 = readme2.read()
