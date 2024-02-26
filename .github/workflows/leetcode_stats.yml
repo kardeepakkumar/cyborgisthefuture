@@ -12,6 +12,9 @@ jobs:
   analyze-and-update-stats:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -36,6 +39,4 @@ jobs:
     - name: Commit and Push Changes (if any)
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: "Update LeetCode statistics"
-        file_pattern: cyborgisthefuture/README.md
-
+        commit_message: Update LeetCode statistics
