@@ -37,6 +37,9 @@ jobs:
     - name: Ensure README.md is writable
       run: chmod +rw ./leetcode/README.md
 
+    - name: Ensure data.json is writable
+      run: chmod +rw ./docs/data.json
+
     - name: Analyze LeetCode Solutions
       run: python .github/scripts/analyze_leetcode.py
 
