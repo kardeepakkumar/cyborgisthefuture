@@ -21,11 +21,15 @@ def update_readme_statistics(readme_path, stats_summary):
             # Correctly append the stats summary with the marker if not found
             new_content = content + f"\n{stats_marker}\n{stats_summary}\n"
 
-        print(new_content)
+        print("NEW CONTENT: ", new_content)
+        print("content: ", content)
         # Move the file pointer to the start for writing
         readme.seek(0)
         readme.write(new_content)
         # Truncate the file in case the new content is shorter than the old content
+        with open(readme_path, 'r+') as readme2:
+            content2 = readme2.read()
+            print("Content2: ", content2)
         readme.truncate()
 
 leetcode_dir = '/home/runner/work/cyborgisthefuture/cyborgisthefuture/leetcode'
