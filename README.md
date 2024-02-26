@@ -33,3 +33,13 @@ Follow me on GitHub to stay updated or reach out to me on [LinkedIn](https://www
 Thank you for visiting my Tech Notes Repository. Happy coding!
 
 test
+## LeetCode Statistics Summary
+
+- Unique Problems Solved: 8
+- Difficulty Distribution: {}
+- Average Time Complexity: nan
+- Average Space Complexity: nan
+- Median Time Complexity: nan
+- Median Space Complexity: nan
+- Languages Used: {}
+- Last Updated: 00000000
