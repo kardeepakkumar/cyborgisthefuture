@@ -58,9 +58,9 @@ for m in metadata:
 
 datewise = ""
 headers = ["Date", "Easy", "Medium", "Hard", "Total", "Cumulative"]
-datewise += "|".join(f"{header:^10}" for header in headers) + "\n"
+datewise += "| " + " | ".join(headers) + " |\n"
+datewise += "|-" + "-|-".join(["-"*len(header) for header in headers]) + "-|\n"
 cumulative_easy, cumulative_medium, cumulative_hard = 0, 0, 0
-total_easy, total_medium, total_hard = 0, 0, 0
 for date in sorted(stats['date_count'].keys()):
     easy = stats['date_count'][date]['easy']
     medium = stats['date_count'][date]['medium']
@@ -70,17 +70,15 @@ for date in sorted(stats['date_count'].keys()):
     cumulative_medium += medium
     cumulative_hard += hard
     cumulative_total = cumulative_easy + cumulative_medium + cumulative_hard
-    total_easy += easy
-    total_medium += medium
-    total_hard += hard
     formatted_date = datetime.strptime(date, "%Y%m%d").strftime("%d %b %Y")
-    datewise += f"{formatted_date:^10} | {easy:^4} | {medium:^6} | {hard:^4} | {total:^5} | {cumulative_total:^10}\n"
-datewise += f"{'Total':^10} | {total_easy:^4} | {total_medium:^6} | {total_hard:^4} | {total_easy + total_medium + total_hard:^5} | \n"
+    datewise += f"| {formatted_date} | {easy} | {medium} | {hard} | {total} | {cumulative_total} |\n"
+datewise += f"| {'Total'} | {cumulative_easy} | {cumulative_medium} | {cumulative_hard} | {cumulative_easy + cumulative_medium + cumulative_hard} |  |\n"
 
 stats_summary = f"""## LeetCode Statistics Summary
 
 - Unique Problems Solved: {len(stats['unique_problems'])}
 - Datewise Attempts
+\n
 {datewise}
 
 """
