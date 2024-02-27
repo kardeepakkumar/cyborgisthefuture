@@ -1,5 +1,6 @@
 # Week 1 Notes
 
+## Course Introduction
 ## 1.1 Introduction to the Program
 
 ### Opportunity in the Digital World
@@ -116,3 +117,65 @@
 ### Navigating Xcode
 - **Project Pane**: Located on the left, displays the file structure.
 - **Top Bar**: Contains the play button to run the app in a simulator.
+
+## Mobile Platforms
+## 1.7 What is a Mobile App?
+
+- **Prevalence**: Mobile users surpass desktop users.
+- **Mobile Website**: Specifically designed, developed, and optimized for mobile devices but doesn't take full advantage of the hardware.
+- **Mobile Apps**: Installable software that utilizes both hardware and software to offer an intuitive and seamless user experience.
+  - **Content-Driven**: A mobile website may suffice.
+  - **Hardware-Dependent**: Requires a mobile app.
+- **Advantages of Mobile Apps**:
+  - Faster performance.
+  - Access to device resources.
+  - Functionality without internet access.
+- **Disadvantages**:
+  - More challenging to maintain.
+  - Costlier to develop.
+  - Platform-specific requirements (e.g., iOS, Android) necessitate approval.
+
+## 1.8 Mobile Apps at Meta
+
+- **Framework Development**: In-house developed frameworks and libraries for iOS mobile development to facilitate easy and rapid development, including open-source components like Component Kit.
+- **Organization**: Structured by app level, then by features, with dedicated teams for iOS, Android, and web development to ensure consistency across platforms.
+- **New Feature Development Process**:
+  1. Set initial goals (e.g., growth, awareness, improvement, aesthetics, reliability).
+  2. Brainstorming sessions with cross-functional partners.
+  3. Roadmap development.
+  4. Privacy reviews, scoping, and planning.
+  5. Execution, tracking milestones, and addressing bugs.
+  6. Experiment rollout and monitoring user response.
+  7. Iteration based on feedback or learning from unsuccessful features.
+  8. Gradual feature rollout, adhering to principles, tech stack, and design guidelines.
+- **Challenges**: Acknowledging that not all answers are known upfront.
+- **Advice**: Emphasize teamwork and the non-isolated nature of work.
+
+## 1.9 How Does a Mobile OS Work?
+
+- **Functionality**: The OS coordinates communication between hardware and software.
+- **Software Stacks**: iOS and Android offer comprehensive software stacks beyond the built-in OS.
+- **User Interaction**: Manages user interactions like swiping and tapping.
+- **Resource Access**: Serves as the channel for apps to access hardware resources.
+- **Android**:
+  - Launched in 2008.
+  - A modified version of the Linux kernel.
+- **iOS**:
+  - Apple's proprietary OS.
+  - Accompanied by a software development kit (SDK).
+
+## 1.10 Careers in iOS Development
+
+- **Market Insights**: Android has a larger global user base, but iOS dominates in markets like the US and UK, driving significant revenue.
+- **Specialization**: Companies often seek expertise in iOS or Android development.
+- **Company Size and Roles**:
+  - Small companies focus on building infrastructure and ramping up engineering teams.
+  - Larger companies emphasize specialized technical skills and the use of frameworks and libraries for efficiency.
+- **Career Progression**: From coding to leading projects.
+- **Styles**:
+  - **Generalist**: Versatile across products and technical areas.
+  - **Specialist**: Deep expertise in a specific area.
+  - **Fixer**: Focuses on identifying and solving system issues.
+  - **Product Hybrid**: Interest in both product management and development.
+  - **Coding Expert**: Renowned for writing high-quality code.
+- **Role Diversity**: Exposure to different roles helps reveal individual strengths.
