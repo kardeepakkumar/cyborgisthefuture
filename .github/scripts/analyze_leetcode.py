@@ -87,12 +87,9 @@ stats_summary = f"""## LeetCode Statistics Summary
 
 update_readme_statistics(readme_path, stats_summary)
 
-def defaultdict_to_dict(d):
-    if isinstance(d, defaultdict):
-        d = {k: defaultdict_to_dict(v) for k, v in d.items()}
-    return d
-
-date_count_dict = defaultdict_to_dict(stats['date_count'])
+stats_serializable = {
+    'date_count': {date: dict(levels) for date, levels in stats['date_count'].items()}
+}
 
 with open(data_json_path, 'w') as json_file:
-    json.dump({"date_count": date_count_dict}, json_file, indent=4)
+    json.dump(stats_serializable, data_json_path, indent=4)
