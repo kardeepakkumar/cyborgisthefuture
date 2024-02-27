@@ -3,10 +3,10 @@ name: LeetCode Stats
 on:
   push:
     paths:
-      - './leetcode/**'
+      - 'leetcode/**'
   pull_request:
     paths:
-      - './leetcode/**'
+      - 'leetcode/**'
   workflow_dispatch:
     inputs:
       reason:

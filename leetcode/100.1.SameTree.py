@@ -16,7 +16,7 @@ class Solution:
 # metadata
 # relevant-topics binary tree, recursion
 # time-complexity O(N) 70.24%
-# space-complexity O(logN -> N) 76.00%
+# space-complexity O(logN->N) 76.00%
 # language python
 # difficulty easy
 # date 20240226
