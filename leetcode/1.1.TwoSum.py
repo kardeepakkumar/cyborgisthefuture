@@ -6,7 +6,6 @@ class Solution:
                 if(nums[i] + nums[j] == target):
                     return([i,j])
 
-
 # metadata
 # relevant-topics array, for loop 
 # time-complexity O(N^2) 17.72%
