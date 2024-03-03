@@ -1,7 +1,7 @@
 
 ## LeetCode Statistics Summary
 
-- Unique Problems Solved: 13
+- Unique Problems Solved: 16
 - Datewise Attempts
 
 
@@ -16,7 +16,8 @@
 | 28 Feb 2024 | 0 | 3 | 0 | 3 | 15 |
 | 29 Feb 2024 | 0 | 1 | 0 | 1 | 16 |
 | 01 Mar 2024 | 1 | 0 | 0 | 1 | 17 |
-| 02 Mar 2024 | 2 | 0 | 0 | 2 | 19 |
-| Total | 12 | 5 | 2 | 19 |  |
+| 02 Mar 2024 | 3 | 1 | 0 | 4 | 21 |
+| 03 Mar 2024 | 0 | 1 | 0 | 1 | 22 |
+| Total | 13 | 7 | 2 | 22 |  |
 
 
