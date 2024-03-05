@@ -21,11 +21,11 @@ Write markdown in any text editor, but nice to have preview(eg: VS Code with ext
 ###### Heading 6
 
 <!-- Italics -->
-*This text* is italics
+*This text* is italics<br>
 _This text_ is italics
 
 <!-- Strong -->
-**This text** is strong
+**This text** is strong<br>
 __This text__ is strong
 
 <!-- Strikethrough -->
@@ -42,8 +42,8 @@ ___
 > This is a quote
 
 <!-- Links -->
-[Link Text](Link URL)
-[Link Text](Link URL "Link Hover Title")
+[Link Text](https://google.com) <br>
+[Link Text](https://google.com "Link Hover Title")
 
 <!-- Unordered List -->
 * Item 1
