@@ -14,7 +14,7 @@ class Solution:
 # metadata
 # relevant-topics array, loops
 # time-complexity O(N) 5.21%
-# space-complexity O(N) 5.21%%
+# space-complexity O(N) 5.21%
 # language python
 # difficulty medium
 # date 20240305
