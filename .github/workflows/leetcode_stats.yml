@@ -1,12 +1,12 @@
 name: LeetCode Stats
 
 on:
-  push:
-    paths:
-      - 'leetcode/**'
-  pull_request:
-    paths:
-      - 'leetcode/**'
+#  push:
+#    paths:
+#      - 'leetcode/**'
+#  pull_request:
+#    paths:
+#      - 'leetcode/**'
   workflow_dispatch:
     inputs:
       reason:
