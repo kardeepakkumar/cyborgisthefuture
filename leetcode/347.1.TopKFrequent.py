@@ -12,7 +12,7 @@ class Solution:
         
 # metadata
 # relevant-topics array, for loop, dictionary 
-# time-complexity O(N) 21.80%
+# time-complexity O(NlogN) 21.80%
 # space-complexity O(N) 91.81%
 # language python
 # difficulty medium
